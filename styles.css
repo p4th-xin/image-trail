@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+background-color: black;
+}
+
+    .topbar {
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 70px;
+    padding-right: 70px;
+    }
+
+    .logo { font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 18px;
+    }
+
+    .logo .gray {
+    color: #9a9a9a;
+    }
+
+    .menu {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: lowercase;
+    opacity: 0.9;
+    color: white;
+    }
+
+.hero {
+  height: 100vh;
+  padding: 140px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  color: white;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.line.center {
+  justify-content: center;
+}
+
+.line.right {
+  justify-content: flex-end;
+}
+
+.big {
+  font-size: clamp(80px, 12vw, 100px);
+  font-weight: 300;
+  font-family: "Inter";
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.tag {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  white-space: nowrap;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #fff;
+}
+
+.trail-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.trail-img {
+  position: absolute;
+  width: 180px;
+  pointer-events: none;
+}
+
+.topbar,
+.hero {
+  position: relative;
+  z-index: 10;         /* above the trail */
+}
